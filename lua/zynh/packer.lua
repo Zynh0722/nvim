@@ -19,18 +19,6 @@ return require('packer').startup(function(use)
     use {
         'rose-pine/neovim',
         as = 'rose-pine',
-        config = function()
-            require('rose-pine').setup({
-                groups = {
-                    background = 'none'
-                },
-                highlight_groups = {
-                    MsgArea = { bg = 'none' },
-                }
-            })
-
-            vim.cmd('colorscheme rose-pine')
-        end
     }
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -49,25 +37,6 @@ return require('packer').startup(function(use)
     use {
         'nvim-lualine/lualine.nvim',
         after = 'rose-pine',
-        config = function()
-            local theme = require("lualine.themes.rose-pine")
-            local modes = { "normal", "insert", "visual", "replace", "command", "inactive" }
-            for _, mode in ipairs(modes) do
-                theme[mode].c.bg = "none"
-            end
-
-
-            -- Set lualine as statusline
-            -- See `:help lualine.txt`
-            require('lualine').setup {
-                options = {
-                    icons_enabled = false,
-                    theme = 'rose-pine',
-                    component_separators = '|',
-                    section_separators = '',
-                },
-            }
-        end
     }                            -- Fancier statusline
 
     use 'numToStr/Comment.nvim'  -- "gc" to comment visual regions/lines
