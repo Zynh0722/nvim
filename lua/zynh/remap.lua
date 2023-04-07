@@ -41,6 +41,16 @@ vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
+vim.keymap.set("i", "<C-h>", "<C-w>h")
+vim.keymap.set("i", "<C-j>", "<C-w>j")
+vim.keymap.set("i", "<C-k>", "<C-w>k")
+vim.keymap.set("i", "<C-l>", "<C-w>l")
+
+vim.keymap.set("t", "<C-h>", "<C-w>h")
+vim.keymap.set("t", "<C-j>", "<C-w>j")
+vim.keymap.set("t", "<C-k>", "<C-w>k")
+vim.keymap.set("t", "<C-l>", "<C-w>l")
+
 vim.keymap.set("n", "<C-z>", function()
     vim.cmd.vsplit()
     vim.cmd.terminal()
