@@ -66,6 +66,11 @@ return require('packer').startup(function(use)
     }
 
     use {
+        'simrat39/rust-tools.nvim',
+        after = 'lsp-zero.nvim'
+    }
+
+    use {
         "folke/which-key.nvim",
         config = function()
             vim.o.timeout = true
