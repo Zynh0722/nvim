@@ -21,7 +21,7 @@ opt.wrap = false
 
 opt.swapfile = false
 opt.backup = false
-opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undodir = "C:\\Users\\Zynh0\\.vim\\undodir"
 opt.undofile = true
 
 opt.hlsearch = false
