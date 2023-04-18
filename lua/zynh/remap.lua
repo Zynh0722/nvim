@@ -51,7 +51,7 @@ vim.keymap.set("t", "<C-j>", "<C-w>j")
 vim.keymap.set("t", "<C-k>", "<C-w>k")
 vim.keymap.set("t", "<C-l>", "<C-w>l")
 
-vim.keymap.set("n", "<C-z>", function()
+vim.keymap.set("n", "<C-Enter>", function()
     vim.cmd.vsplit()
     vim.cmd.terminal()
 end)
