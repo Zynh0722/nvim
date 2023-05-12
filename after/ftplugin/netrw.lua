@@ -1,2 +1,0 @@
--- vim.keymap.set('n', "<C-o>", vim.cmd("mfmx"), { buffer = true })
--- attempt to open in external file explorer I think
