@@ -11,5 +11,5 @@ return {
       })
     end,
   },
-  { "nvim-treesitter/playground", dependencies = { "nvim-treesitter/nvim-treesitter" }, lazy = true },
+  { "nvim-treesitter/playground", dependencies = { "nvim-treesitter/nvim-treesitter" } },
 }
