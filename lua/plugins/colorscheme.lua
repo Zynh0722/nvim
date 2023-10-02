@@ -10,6 +10,9 @@ return {
       })
     end,
   },
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+  },
 
   -- Configure LazyVim to load rose-pine
   {

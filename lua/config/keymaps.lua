@@ -16,5 +16,15 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
-map("n", "<C-u>", "<C-u>zz", { desc = "Centered Half Page Up", remap = true })
-map("n", "<C-d>", "<C-d>zz", { desc = "Centered Half Page Down", remap = true })
+map(
+  "n",
+  "<C-u>",
+  "<Cmd>lua vim.cmd('normal! <C-u>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",
+  { desc = "Centered Half Page Up", remap = true }
+)
+map(
+  "n",
+  "<C-d>",
+  "<Cmd>lua vim.cmd('normal! <C-d>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",
+  { desc = "Centered Half Page Down", remap = true }
+)

@@ -15,6 +15,11 @@ return {
                   group = "module",
                 },
               },
+              cargo = {
+                buildScripts = {
+                  enable = false,
+                },
+              },
               files = {
                 excludeDirs = {
                   "pe-template",
