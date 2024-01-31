@@ -28,3 +28,4 @@ map(
   "<Cmd>lua vim.cmd('normal! <C-d>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",
   { desc = "Centered Half Page Down", remap = true }
 )
+map("n", "<leader>u<Tab>", ":set list!<CR>", { desc = "Toggle list (Whitespace display)", remap = true })
