@@ -2,8 +2,14 @@
 require("config.lazy")
 
 vim.g.editorconfig = true
-vim.cmd("filetype plugin on")
-vim.cmd("filetype indent off")
+
+vim.cmd([[
+  filetype plugin on
+  filetype indent off
+
+  aunmenu PopUp.How-to\ disable\ mouse
+  aunmenu PopUp.-1-
+]])
 
 if vim.loader then
   vim.loader.enable()
