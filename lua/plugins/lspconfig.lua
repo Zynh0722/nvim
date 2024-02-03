@@ -11,9 +11,9 @@ return {
           mason = false,
           settings = {
             ["rust-analyzer"] = {
-              rustfmt = {
-                overrideCommand = { "leptosfmt", "--stdin", "--rustfmt" },
-              },
+              -- rustfmt = {
+              --   overrideCommand = { "leptosfmt", "--stdin", "--rustfmt" },
+              -- },
               imports = {
                 granularity = {
                   group = "module",
