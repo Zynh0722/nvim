@@ -2,7 +2,8 @@ return {
   {
     "stevearc/oil.nvim",
     opts = {},
-    commands = { ":Oil" },
+    cmd = { "Oil" },
+    keys = { { "<leader>o", "<CMD>Oil<CR>", desc = "Oil", remap = true } },
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
