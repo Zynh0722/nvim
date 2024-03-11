@@ -22,31 +22,31 @@ return {
         },
         rust_analyzer = {
           mason = false,
-          settings = {
-            ["rust-analyzer"] = {
-              -- rustfmt = {
-              --   overrideCommand = { "leptosfmt", "--stdin", "--rustfmt" },
-              -- },
-              imports = {
-                granularity = {
-                  group = "module",
-                },
-              },
-              cargo = {
-                buildScripts = {
-                  enable = false,
-                },
-              },
-              files = {
-                excludeDirs = {
-                  "pe-template",
-                },
-              },
-              procMacro = {
-                enable = true,
-              },
-            },
-          },
+          -- settings = {
+          --   ["rust-analyzer"] = {
+          --     -- rustfmt = {
+          --     --   overrideCommand = { "leptosfmt", "--stdin", "--rustfmt" },
+          --     -- },
+          --     imports = {
+          --       granularity = {
+          --         group = "module",
+          --       },
+          --     },
+          --     cargo = {
+          --       buildScripts = {
+          --         enable = false,
+          --       },
+          --     },
+          --     files = {
+          --       excludeDirs = {
+          --         "pe-template",
+          --       },
+          --     },
+          --     procMacro = {
+          --       enable = true,
+          --     },
+          --   },
+          -- },
         },
         tailwindcss = {
           init_options = {
