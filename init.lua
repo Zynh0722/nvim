@@ -8,7 +8,10 @@ vim.cmd([[
   filetype indent off
 
   aunmenu PopUp.How-to\ disable\ mouse
-  aunmenu PopUp.-1-
+
+  " replacing the default disable mouse menu with shame >:(
+  " aunmenu PopUp.-1-
+  anoremenu PopUp.Stinky\ Mouse\ User\ >:( <Nop>
 ]])
 
 if vim.loader then
