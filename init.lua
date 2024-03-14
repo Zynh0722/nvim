@@ -13,11 +13,3 @@ vim.cmd([[
   " aunmenu PopUp.-1-
   anoremenu PopUp.Stinky\ Mouse\ User\ >:( <Nop>
 ]])
-
-if vim.loader then
-  vim.loader.enable()
-end
-
-vim.api.nvim_create_autocmd({ "TermOpen" }, {
-  command = "set nobuflisted",
-})

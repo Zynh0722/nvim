@@ -3,3 +3,7 @@
 -- Add any additional options here
 
 vim.o.conceallevel = 2
+
+if vim.loader then
+  vim.loader.enable()
+end
