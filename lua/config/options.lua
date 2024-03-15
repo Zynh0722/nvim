@@ -7,3 +7,9 @@ vim.o.conceallevel = 2
 if vim.loader then
   vim.loader.enable()
 end
+
+vim.filetype.add({
+  extension = {
+    mdx = "markdown",
+  },
+})
