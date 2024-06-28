@@ -6,16 +6,16 @@ return {
     opts = {
       -- -@type lspconfig.options
       servers = {
-        -- nil_ls = {
-        --   mason = false,
-        --   settings = {
-        --     ["nil"] = {
-        --       formatting = {
-        --         command = { "nixpkgs-fmt" },
-        --       },
-        --     },
-        --   },
-        -- },
+        nil_ls = {
+          mason = false,
+          settings = {
+            ["nil"] = {
+              formatting = {
+                command = { "nixpkgs-fmt" },
+              },
+            },
+          },
+        },
         lua_ls = {
           mason = false,
         },
