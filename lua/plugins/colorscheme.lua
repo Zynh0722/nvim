@@ -15,7 +15,6 @@ return {
   },
   {
     "nyoom-engineering/oxocarbon.nvim",
-    event = "VeryLazy",
   },
 
   -- Configure LazyVim to load rose-pine
