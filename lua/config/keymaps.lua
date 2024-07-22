@@ -16,16 +16,20 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
-map(
-  "n",
-  "<C-u>",
-  "<Cmd>lua vim.cmd('normal! <C-u>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",
-  { desc = "Centered Half Page Up", remap = true }
-)
-map(
-  "n",
-  "<C-d>",
-  "<Cmd>lua vim.cmd('normal! <C-d>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",
-  { desc = "Centered Half Page Down", remap = true }
-)
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Center cursor after moving down half-page" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Center cursor after moving up half-page" })
+
+-- map(
+--   "n",
+--   "<C-u>",
+--   "<Cmd>lua vim.cmd('normal! <C-u>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",
+--   { desc = "Centered Half Page Up", remap = true }
+-- )
+-- map(
+--   "n",
+--   "<C-d>",
+--   "<Cmd>lua vim.cmd('normal! <C-d>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",
+--   { desc = "Centered Half Page Down", remap = true }
+-- )
+
 map("n", "<leader>u<Tab>", ":set list!<CR>", { desc = "Toggle list (Whitespace display)", remap = true })
