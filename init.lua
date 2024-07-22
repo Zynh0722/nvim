@@ -2,5 +2,3 @@
 require("config.lazy")
 
 local ok, mymod = pcall(require, "parsers")
-
-vim.g.editorconfig = true

@@ -10,6 +10,8 @@ vim.filetype.add({
   },
 })
 
+vim.g.editorconfig = true
+
 vim.cmd([[
   filetype plugin on
   filetype indent off
